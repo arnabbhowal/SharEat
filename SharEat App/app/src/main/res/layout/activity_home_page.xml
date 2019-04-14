@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomePage">
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/donatedt"
+                android:layout_width="wrap_content"
+                android:layout_height="120dp"
+                android:src="@drawable/donate"
+                android:layout_marginTop="40dp"/>
+
+            <RelativeLayout
+                android:id="@+id/ordernow"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:background="#000"
+                android:layout_below="@+id/donatedt">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:src="@drawable/order"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/noodle"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="@drawable/noo"
+                android:layout_below="@+id/ordernow" />
+
+            <Button
+                android:id="@+id/burger"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="@drawable/bur"
+                android:layout_below="@+id/noodle"
+                android:layout_marginTop="15dp"/>
+
+            <Button
+                android:id="@+id/veg"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="@drawable/veg"
+                android:layout_below="@+id/burger"
+                android:layout_marginTop="15dp"/>
+
+            <Button
+                android:id="@+id/chicken"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="@drawable/chicken"
+                android:layout_below="@+id/veg"
+                android:layout_marginTop="15dp"/>
+
+            <Button
+                android:id="@+id/pizza"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="@drawable/pizza"
+                android:layout_below="@+id/chicken"
+                android:layout_marginTop="15dp"/>
+
+            <Button
+                android:id="@+id/sandwi"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="@drawable/sandwi"
+                android:layout_below="@+id/pizza"
+                android:layout_marginTop="15dp"/>
+
+            <Button
+                android:id="@+id/seafood"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="@drawable/sea"
+                android:layout_below="@+id/sandwi"
+                android:layout_marginTop="15dp"/>
+
+            <Button
+                android:id="@+id/hotdog"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="@drawable/hotdog"
+                android:layout_below="@+id/seafood"
+                android:layout_marginTop="15dp"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/profile"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/profile"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"/>
+
+</RelativeLayout>
